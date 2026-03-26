@@ -1,4 +1,4 @@
-# PROYECTO BASE: [Nombre de la Aplicación] - Software Factory SENA
+# PROYECTO BASE: [8.1 Prueba práctica de JavaScript: Arreglos, Callbacks y Análisis Lógico] - Software Factory SENA
 
 **Metodología:** *"Del Requerimiento al Producto"*
 
@@ -207,9 +207,9 @@ En la industria, el software que no está publicado no existe. Esto vincula el r
 
 ## DIRECCIÓN DEL PROYECTO
 
-- **Instructor:** [Tu Nombre Aquí]  
+- **Instructor:** [John Freddy Becerra Castellanos]  
 - **Institución:** Servicio Nacional de Aprendizaje (SENA)  
-- **Centro:** [Nombre de tu Centro de Formación]  
+- **Centro:** [Centro Industrial de Mantenimiento Integral (CIMI)]  
 - **Programa:** Análisis y Desarrollo de Software  
 
 ---
