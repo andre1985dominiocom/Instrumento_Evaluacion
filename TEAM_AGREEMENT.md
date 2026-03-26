@@ -6,6 +6,8 @@ Este documento establece las reglas de convivencia, comunicación y estándares 
 | Nombre | Rol | Usuario de GitHub |
 | :--- | :--- | :--- |
 | [Sergo Andrés Álvarez] | Líder (Arquitecto) | `@andre1985dominiocom` |
+| [Nombre del Aprendiz 2] | Desarrollador | `@usuario2` |
+| [Anderson Murcia] | Desarrollador | `@andersonea19` |
 | [Michael Benavides] | Desarrollador | `@michaelbenavides3` |
 | [Nombre del Aprendiz 3] | Desarrollador | `@usuario3` |
 
