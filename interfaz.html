@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./interfaz/interfaz.css">
+    <title>Prueba practica</title>
+</head>
+<body>
+    <h1 class="titulo">Prueba practica</h1>
+    <p class="parrafo_opcion">Elija una opción de ejercicio: </p>
+        <!-- con onchange automatizamos la busqueda, le ahorramos un click al usuario, reemplaza un boton -->
+        <select id="selectorEjercicios" class="select-moderno">
+            <option value="">Selecciona una opcion</option>
+            <option value="Ejercicios/Ejercicio1/Ejercicio1.html">Ejercicio 1</option>
+            <option value="2">Ejercicio 2</option>
+            <option value="3">Ejercicio 3</option>
+            <option value="4">Ejercicio 4</option>
+            <option value="5">Ejercicio 5</option>
+            <option value="6">Ejercicio 6</option>
+            <option value="7">Ejercicio 7</option>
+            <option value="8">Ejercicio 8</option>
+            <option value="9">Ejercicio 9</option>
+            <option value="10">Ejercicio 10</option>
+            <option value="11">Ejercicio 11</option>
+            <option value="12">Ejercicio 12</option>
+            <option value="13">Ejercicio 13</option>
+            <option value="14">Ejercicio 14</option>
+            <option value="15">Ejercicio 15</option>
+            <option value="16">Ejercicio 16</option>
+            <option value="17">Ejercicio 17</option>
+        </select>
+        <button type="button" class="boton-ir" onclick="irAlmodulo()">Ir</button>
+        <!-- esta es la funcion que ayuda a filtrar los index por ejercicios-->
+        <script>
+            function irAlmodulo() {
+                // 1. Obtenemos el elemento select
+                const lista = document.getElementById("selectorEjercicios");
+            
+                // 2. Obtenemos la ruta del archivo (el value de la opción)
+                const rutaSeleccionada = lista.value;
+
+                // 3. Verificamos que no esté vacío antes de navegar
+                if (rutaSeleccionada !== "") {
+                    window.location.href = rutaSeleccionada;
+                } else {
+                    alert("Selecciona un ejercicio");
+                }
+            }
+        </script>
+</body>
+</html>
