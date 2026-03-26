@@ -16,6 +16,7 @@
 // • Permisos asignados según el rol.
 // • Mensaje de acceso permitido o denegado.
 
+import { validarUsuario } from "../evaluacion/index.js";
 
 // Definición de la función validarUsuario
 function validarUsuario(nombre, estado, rol) {

@@ -16,6 +16,9 @@
 // • Inventario final.
 // • Mensaje “Inventario crítico” o “Inventario estable”.
 
+import { calcularInventario } from "../evaluacion/index.js";
+
+// Definimos la función calcularInventario
 function calcularInventario(inicial, vendidos, recibidos) {
 
     // 1. Validar que no haya valores negativos en las entradas
