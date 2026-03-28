@@ -16,10 +16,8 @@
 // • Inventario final.
 // • Mensaje “Inventario crítico” o “Inventario estable”.
 
-import { calcularInventario } from "../evaluacion/index.js";
-
 // Definimos la función calcularInventario
-function calcularInventario(inicial, vendidos, recibidos) {
+export function calcularInventario(inicial, vendidos, recibidos) {
 
     // 1. Validar que no haya valores negativos en las entradas
     if (inicial < 0 || vendidos < 0 || recibidos < 0) {
@@ -39,7 +37,3 @@ function calcularInventario(inicial, vendidos, recibidos) {
 
     return `Inventario Final: ${inventarioFinal} unidades - ${estado}`;
 }
-
-// 
-console.log(calcularInventario(10, 7, 3)); 
-console.log(calcularInventario(10, 8, 2)); 

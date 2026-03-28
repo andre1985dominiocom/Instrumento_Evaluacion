@@ -21,17 +21,16 @@
 // Exportamos la función para que el archivo 'index.js' pueda importarla y usarla
 export function validarAsistencia(aprendices, nombre) {
     
-  
     // estructura de control utilizando: if / else
     //  se utiliza para decidir que mensaje retornar basandonos en una condicion booleana.
     
-    // el meodo .includes() verifica si el 'nombre' existe dentro del arreglo 'aprendices'.
+    // el metodo .includes() verifica si el 'nombre' existe dentro del arreglo 'aprendices'.
     // si el resultado es verdadero (true), entra al primer bloque:
     if (aprendices.includes(nombre)) {
         
         // retorna el mensaje de éxito y finaliza la ejecución de la función.
         return `el aprendiz ${nombre} está inscrito.`;
-    } 
+    }
     
     // si la condición del 'if' no se cumple (es decir, el nombre no está en la lista):
     else {
@@ -40,5 +39,3 @@ export function validarAsistencia(aprendices, nombre) {
         return `el aprendiz ${nombre} NO está inscrito.`;
     }
 }
-
-

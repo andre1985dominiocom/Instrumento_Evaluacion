@@ -16,10 +16,8 @@
 // • Permisos asignados según el rol.
 // • Mensaje de acceso permitido o denegado.
 
-import { validarUsuario } from "../evaluacion/index.js";
-
 // Definición de la función validarUsuario
-function validarUsuario(nombre, estado, rol) {
+export function validarUsuario(nombre, estado, rol) {
 
     // Verificar si el usuario está activo (lógica AND)
     if (estado !== "activo") {
@@ -31,6 +29,7 @@ function validarUsuario(nombre, estado, rol) {
         };
     }
 
+    // Inicializar permisos y acceso
     let permisos = [];
     let acceso = "permitido";
 
@@ -51,6 +50,7 @@ function validarUsuario(nombre, estado, rol) {
         break;
     }
 
+    // Retornar el resultado con el nombre, nivel de acceso, mensaje y permisos
     return {
     nombre: nombre,
     acceso: acceso,
@@ -58,9 +58,3 @@ function validarUsuario(nombre, estado, rol) {
     permisos: permisos
     };
 }
-
-// Prueba del ejercicio 5
-console.log(validarUsuario("Ana", "activo", "admin"));   // Acceso total
-console.log(validarUsuario("Pedro", "activo", "lector")); // Acceso lector
-console.log(validarUsuario("Luis", "inactivo", "admin")); // Acceso denegado (inactivo)
-console.log(validarUsuario("Maria", "activo", "editor")); // Acceso editor

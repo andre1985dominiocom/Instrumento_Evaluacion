@@ -1,5 +1,5 @@
-// archivo barril: importa el módulo 
-import { validarAsistencia } from "./app.js";
+// Importamos la función desde el archivo barril
+import { validarAsistencia } from  "./index.js";
 
 // Entradas simuladas
 const cantidad = 3;
