@@ -16,21 +16,21 @@
 // • Arreglo ordenado.
 // • Precio más alto y más bajo.
 
-//exportamos la funcion para poder trabajr en modulos
-//creamos un function para organizar los precios, el cual recibe un parametro llamado precio
-export function organizarPrecio(precio) {
-  
-  //creamos uns constante que se llama ordenar, el cual recibe un argumento llamdo precio, y se utiliza 
-  //el metodo sort
-  const ordenar = precio.sort((a, b) => b - a);
+// aqui es donde ejecutamos todo.
+// importamos desde el index.js (nuestro barril).
 
-  const precioAlto = ordenar[0];
-  const precioBajo = ordenar[ordenar.length - 1];
+import { organizarprecios } from './funciones.js';
 
-  return {
-    ordenar,
-    precioAlto,
-    precioBajo
-  };
+// entradas: definimos cuantos precios hay y la lista.
+const cantidad = 5;
+const preciosregistrados = [1500, 300, 4500, 100, 2200];
 
-}
+// verificamos que la cantidad coincida y procesamos.
+const resultado = organizarprecios(preciosregistrados);
+
+// salidas: mostramos los resultados en consola.
+console.log("lista de precios ordenados:", resultado.ordenados );
+console.log("el precio mas caro es:", resultado.alto);
+console.log("el precio mas barato es:", resultado.bajo);
+
+
