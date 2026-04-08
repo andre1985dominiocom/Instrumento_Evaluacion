@@ -18,5 +18,5 @@ export function organizarprecios(listadeprecios) {
 
     // devolvemos los tres datos que nos pide el ejercicio.
     return { ordenados, alto, bajo };
-}
+};
 
